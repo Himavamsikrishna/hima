@@ -1,0 +1,222 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.menu{
+	width: 50px;
+	height: 50px;
+	margin-left: 40px;
+	margin-top: 20px;
+	cursor: pointer;
+	position: fixed;
+}
+.bar{
+	display: block;
+	width: 40px;
+	height: 6px;
+	background-color:#ff0000;
+	margin: 4px;
+	margin-left: 5px;
+	border-radius: 2px;
+}
+.bar1{
+	display: block;
+	width: 40px;
+	height: 6px;
+	background-color: #ff0000;
+	margin: 4px;
+	margin-left: 5px;
+	margin-top: 12px;
+	border-radius: 2px;
+}
+.menu:hover {
+	transition: 600ms;
+	background-color: #ff0000;
+	border-radius: 50px;
+}
+.menu:hover > .bar{
+	background-color: white;
+}
+.menu:hover > .bar1 {
+	background-color: white;
+}
+.hidden{
+	width: 420px;
+	height: 60px; 
+	margin-left: 90px;
+	margin-top: 10px;
+	padding-top: 10px;
+	visibility: hidden;
+	position: fixed;
+}
+.a{
+	text-decoration: none;
+	color: #ff0000;
+	font-weight: bold;
+}
+.nav{
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	transition: 600ms;
+	background-image: url(fire1.jpg), url(fire2.jpg);
+	background-size: 0px 10px, 0px 10px;
+	background-position: bottom left, top right;
+	background-repeat: no-repeat, no-repeat;
+}
+.nav:hover{
+	transition: 400ms;
+	height: 53px;
+	line-height: 53px;
+	background-image: url(fire1.jpg), url(fire2.jpg);
+	background-size: 120px 20px, 120px 20px;
+	background-position: bottom left, top right;
+	background-repeat: no-repeat, no-repeat;	
+}
+.menu:hover + .hidden{
+	visibility: visible;
+}
+.hidden:hover{
+	visibility: visible;
+}
+
+.section{
+	background-image: url(fire.jpg);
+	background-size: 250px 125px;	
+}
+
+h2{
+	color: #ff0000;
+}
+
+.head{
+	display: block;
+	padding-top: 60px;
+	height: 80px;
+	text-align: center;
+	color: #000099;
+	font-size: 30px;
+	text-shadow: -1px 2px 3px;
+}
+.phone{
+	display: block;
+	color: #3333cc;
+	text-align: center;
+	font-size: 25px;
+	height: 50px;
+	text-shadow: -1px 2px 3px;
+}
+.mail{
+	display: block;
+	color: #3333cc ;
+	text-align: center;
+	font-size: 25px;
+	height: 50px;
+	text-shadow: -1px 2px 3px;
+}
+.media{
+	display: block;
+	color: #000099 ;
+	text-align: center;
+	height: 50px;
+	font-size: 30px;
+	text-shadow: -1px 2px 3px;
+	margin-top: 60px;
+}
+span::after{
+	content: '\00bb';
+	position: absolute;
+	transition: 600ms;
+	opacity: 0;
+}
+.media:hover span{
+	transition: 600ms;
+	padding-right: 25px;
+}
+.media:hover span::after{
+	opacity: 1;
+}
+
+.box2{
+	position: fixed;
+	height: 250px;
+	width: 250px;
+	margin-left: 40%;
+	opacity: 0;
+}
+.img2{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-image: url(facebook.jpg);
+	background-size: cover;
+	margin-left: 100px;
+	margin-top: 25px;
+}
+.img3{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-image: url(linkdin.jpg);
+	background-size: cover;
+	margin-top: 60px;
+	margin-left: 50px;
+	float: left;
+}
+.img4{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-image: url(twitter.jpg);
+	background-size: cover;
+	margin-top: 60px;
+	margin-left: 50px;
+	float: left;
+}
+
+.media:hover ~ .box2{
+	transition: 1000ms;
+	transform: rotate(360deg);
+	opacity: 1;
+}
+.box2:hover{
+	transition: 1000ms;
+	transform: rotate(360deg);
+	opacity: 1;
+}
+
+.img2:hover{
+	transition: 600ms;
+	height: 55px;
+	width: 55px;
+}
+.img3:hover{
+	transition: 600ms;
+	height: 55px;
+	width: 55px;
+}
+.img4:hover{
+	transition: 600ms;
+	height: 55px;
+	width: 55px;
+}
+
+
+
+
+
+
+
+
+
+

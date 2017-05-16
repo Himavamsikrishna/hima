@@ -1,0 +1,141 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.menu{
+	width: 50px;
+	height: 50px;
+	margin-left: 40px;
+	margin-top: 20px;
+	cursor: pointer;
+	position: fixed;
+}
+.bar{
+	display: block;
+	width: 40px;
+	height: 6px;
+	background-color: #4CAF50;
+	margin: 4px;
+	margin-left: 5px;
+	border-radius: 2px;
+}
+.bar1{
+	display: block;
+	width: 40px;
+	height: 6px;
+	background-color: #4CAF50;
+	margin: 4px;
+	margin-left: 5px;
+	margin-top: 12px;
+	border-radius: 2px;
+}
+.menu:hover {
+	transition: 600ms;
+	background-color: #4CAF50;
+	border-radius: 50px;
+}
+.menu:hover > .bar{
+	background-color: white;
+}
+.menu:hover > .bar1 {
+	background-color: white;
+}
+.hidden{
+	width: 420px;
+	height: 60px; 
+	margin-left: 90px;
+	margin-top: 10px;
+	padding-top: 10px;
+	visibility: hidden;
+	position: absolute;
+}
+.a{
+	text-decoration: none;
+	color: #4CAF50;
+	font-weight: bold;
+}
+.nav{
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	transition: 600ms;
+	background-image: url(green3.jpg);
+	background-size: 0px 50px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.nav:hover{
+	transition: 600ms;
+	height: 52px;
+	line-height: 52px;
+	background-image: url(green3.jpg);
+	background-size: 80px 50px;
+	background-position: bottom right;
+	background-repeat: no-repeat;	
+}
+.menu:hover + .hidden{
+	visibility: visible;
+}
+.hidden:hover{
+	visibility: visible;
+}
+.section1{
+	background-image:url(green1.jpg);
+	background-size: 100% 100%;
+}
+.button1{
+	width: 42%;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+    color: #009933;
+	font-weight: bold;
+	font-size: 200%;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 1px solid #00993;
+	
+}
+.wel::after{
+	content: '\00bb';
+	position: absolute;
+	transition: 600ms;
+	opacity: 0;
+}
+.button1:hover .wel{
+	transition: 600ms;
+	padding-right: 25px;
+	border-top: 3px solid green; 
+	border-left: 3px solid green;
+	border-right: 3px solid green;
+	border-radius: 15px;
+	text-shadow: 2px 2px 3px green;
+}
+.button1:hover .wel::after{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
